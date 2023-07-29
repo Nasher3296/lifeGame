@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.inputs{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    font-size: 30px;
+    padding: 1rem;
+}
+
+#setGrid{
+    padding: 2rem;
+}
+
+#counter{
+    color: white;
+    height: 1rem;
+}
+
+.grid{
+    margin: auto;
+}
+
+td{
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+td.alive{
+    background-color: white;
+}
