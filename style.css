@@ -8,9 +8,13 @@ body{
     justify-content: center;
 }
 
+.range_cont > *{
+    display: block;
+    text-align: center;    
+}
+
 input{
     font-size: 30px;
-    padding: 1rem;
 }
 
 #setGrid{

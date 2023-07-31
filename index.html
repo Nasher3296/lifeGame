@@ -9,15 +9,24 @@
 </head>
 <body>
     <div class="inputs">
-        <input type="number" name="cols_qty" id="cols_qty" value="15">
-        <input type="number" name="rows_qty" id="rows_qty" value="15">
-        <button id="setGrid"></button>
+        <div class="range_cont">
+            <label for="rows_qty">Filas</label>
+            <input type="range" name="rows_qty" id="rows_qty" value="15" min="5" max="50" oninput="rows_amount.value=rows_qty.value">  
+            <input id="rows_amount" type="number" value="15" min="15" max="50" oninput="rows_qty.value=rows_amount.value" />
+        </div>
+        <div class="range_cont">
+            <label for="cols_qty">Columnas</label>
+            <input type="range" name="cols_qty" id="cols_qty" value="15" min="5" max="50" oninput="cols_amount.value=cols_qty.value">  
+            <input id="cols_amount" type="number" value="15" min="15" max="50" oninput="cols_qty.value=cols_amount.value" />
+        </div>
+        <button id="setGrid">Set</button>
         <button id="play">Play</button>
+        <button id="pause">Pause</button>
         <button id="stop">Stop</button>
     </div>
     <div id="counter"></div>
     <table class="grid" id="grid">
     </table>
-    <script src="index.js"></script>
+    <script src="index2.js"></script>
 </body> 
 </html>
